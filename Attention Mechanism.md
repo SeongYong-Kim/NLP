@@ -26,7 +26,7 @@
 
 ![img](https://wikidocs.net/images/page/22893/dotproductattention1_final.PNG)
 
-
+이미지 출처 : https://wikidocs.net/45609
 
 ##### 1) Attention Score를 구한다.
 
@@ -72,4 +72,8 @@ $$
 $$
 s^t=tanh(W_c[α_t;s_t]+b_c)
 $$
+이미지 출처 : https://wikidocs.net/45609
+
+##### 
+
 Wc는 학습 가능한 가중치 행렬, bc는 편향

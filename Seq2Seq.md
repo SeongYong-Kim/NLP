@@ -8,6 +8,10 @@
 
 ![img](https://wikidocs.net/images/page/24996/%EC%9D%B8%EC%BD%94%EB%8D%94%EB%94%94%EC%BD%94%EB%8D%94%EB%AA%A8%EB%8D%B8.PNG)
 
+이미지 출처 : https://wikidocs.net/45609
+
+
+
 * encoder(RNN) - context vector - decoder(RNN)
 
 * context vector는 encoder RNN셀 마지막 시점의 hidden state이다.

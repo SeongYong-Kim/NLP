@@ -25,6 +25,8 @@ seq2seq의 구조인 인코더-디코더를 따르면서도, 논문의 이름처
 
 ![img](https://wikidocs.net/images/page/31379/transformer2.PNG)
 
+이미지 출처 : https://wikidocs.net/45609
+
 
 
 #### Positional Encoding
@@ -37,23 +39,33 @@ RNN이 자연어 처리에서 유용했던 이유는 단어의 위치에 따라 
 
 ![img](https://wikidocs.net/images/page/31379/transformer6_final.PNG)
 
+이미지 출처 : https://wikidocs.net/45609
 
+##### 
 
 #### Attention
 
 ![img](https://wikidocs.net/images/page/31379/attention.PNG)
 
+이미지 출처 : https://wikidocs.net/45609
 
+##### 
 
 
 
 ![img](https://wikidocs.net/images/page/31379/transformer_attention_overview.PNG)
 
+이미지 출처 : https://wikidocs.net/45609
 
+##### 
 
 #### Encoder
 
 ![img](https://wikidocs.net/images/page/31379/transformer9_final_ver.PNG)
+
+이미지 출처 : https://wikidocs.net/45609
+
+##### 
 
 * 멀티 헤드 셀프 어텐션은 셀프 어텐션을 병렬적으로 사용하였다는 의미
 
@@ -85,13 +97,19 @@ $$
 
 ![img](https://wikidocs.net/images/page/31379/transformer12.PNG)
 
- 
+이미지 출처 : https://wikidocs.net/45609
+
+#####  
 
 ![img](https://wikidocs.net/images/page/31379/transformer15.PNG)
 
+이미지 출처 : https://wikidocs.net/45609
 
+##### 
 
 ![img](https://wikidocs.net/images/page/31379/transformer16.PNG)
+
+이미지 출처 : https://wikidocs.net/45609
 
 ##### 4) 멀티 헤드 어텐션
 
@@ -109,7 +127,9 @@ $$
 
 ![img](https://wikidocs.net/images/page/31379/transformer18_final.PNG)
 
+이미지 출처 : https://wikidocs.net/45609
 
+##### 
 
 ##### 5) 패딩 마스크
 
@@ -121,7 +141,9 @@ $$
 
 ![img](https://wikidocs.net/images/page/31379/positionwiseffnn.PNG)
 
+이미지 출처 : https://wikidocs.net/45609
 
+##### 
 
 x는 앞서 멀티 헤드 어텐션의 결과로 나온 (seq_len, dmodel)의 크기를 가지는 행렬을 말함
 
@@ -131,23 +153,37 @@ x는 앞서 멀티 헤드 어텐션의 결과로 나온 (seq_len, dmodel)의 크
 
 ![img](https://wikidocs.net/images/page/31379/transformer20.PNG)
 
+이미지 출처 : https://wikidocs.net/45609
+
+
+
 ##### 7) 잔차 연결과 층 정규화
 
 * 잔차 연결 : 입력과 출력을 더하는 것을 말함
 
   ![img](https://wikidocs.net/images/page/31379/transformer22.PNG)
 
-  H(x)=x+Multi head Attention(x)
+  이미지 출처 : https://wikidocs.net/45609
+
+  ##### H(x)=x+Multi head Attention(x)
 
 * 층 정규화
 
   ![img](https://wikidocs.net/images/page/31379/layer_norm_new_1_final.PNG)
+  
+  이미지 출처 : https://wikidocs.net/45609
+  
+  ##### 
 
 ![image-20201121171708825](C:\Users\pc\AppData\Roaming\Typora\typora-user-images\image-20201121171708825.png)
 
 #### Decoder
 
 ![img](https://wikidocs.net/images/page/31379/%EB%94%94%EC%BD%94%EB%8D%94.PNG)
+
+이미지 출처 : https://wikidocs.net/45609
+
+##### 
 
 ##### 1) Masked Multi-head Self-Attention
 
@@ -159,6 +195,10 @@ encoder에서 넘어오는 정보에 과거 시점뿐만 아니라 미래 시점
 
 ![img](https://wikidocs.net/images/page/31379/%EB%A3%A9%EC%96%B4%ED%97%A4%EB%93%9C%EB%A7%88%EC%8A%A4%ED%81%AC.PNG)
 
+이미지 출처 : https://wikidocs.net/45609
+
+##### 
+
 자신보다 미래에 있는 단어들은 참고x
 
 
@@ -166,3 +206,7 @@ encoder에서 넘어오는 정보에 과거 시점뿐만 아니라 미래 시점
 ##### 2) encoder-decoder attention
 
 ![img](https://wikidocs.net/images/page/31379/%EB%94%94%EC%BD%94%EB%8D%94%EB%91%90%EB%B2%88%EC%A7%B8%EC%84%9C%EB%B8%8C%EC%B8%B5%EC%9D%98%EC%96%B4%ED%85%90%EC%85%98%EC%8A%A4%EC%BD%94%EC%96%B4%ED%96%89%EB%A0%AC_final.PNG)
+
+이미지 출처 : https://wikidocs.net/45609
+
+##### 
